@@ -1,4 +1,0 @@
-export async function onRequest({request}) {
- const o={}; for(const [k,v] of request.headers)o[k]=v;
- return new Response(JSON.stringify(o,null,2),{headers:{"content-type":"application/json;charset=UTF-8","cache-control":"no-store"}});
-}
